@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Registro</h1>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <div id="alertname" class="alert">Llena este espacio</div>
+
+            <label for="correo">Email:</label>
+            <input type="email" id="email" name="email">
+            <div id="alertemail" class="alert">Llena este espacio</div>
+            <div id="alertemailat" class="alert">Falta el @</div>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena">
+            <div id="alertpass" class="alert">Llena este espacio</div>
+            <div id="alertpass2" class="alert">Debe ser mayor de 8 digitos.</div>
+            <div id="alertpassnum" class="alert">Debe contener al menos un número.</div>
+
+            <p><label for="genero">Género:</label></p>
+            <div class="radio-group">
+                <input type="radio" id="hombre" name="genero" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="genero" value="mujer">
+                <label for="mujer">Mujer</label>
+            </div>
+            <div id="alertgen" class="alert">Valida una de las casillas</div>            
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="espana">España</option>
+                <option value="mexico">México</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+            </select>
+
+            <button type="button" id="button">Registrar</button>
+
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/login/">
+                    <img src="C:\Users\mikey\Documents\paginas\formulario\Facebook_logo_(square).png" alt="Facebook" class="social-logo">
+                </a>
+                <a href="https://accounts.google.com/signin/">
+                    <img src="C:\Users\mikey\Documents\paginas\formulario\Google__G__logo.svg.png" alt="Google" class="social-logo">
+                </a>
+                <a href="https://twitter.com/login/">
+                    <img src="C:\Users\mikey\Documents\paginas\formulario\3938028.png" alt="Twitter" class="social-logo">
+                </a>
+            </div>
+        </form>
+    </div>
+    <script src="formulario.js"></script>
+</body>
+
+</html>

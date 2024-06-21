@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(to right, #6a11cb, #58ecd9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #6a11cb, #58ecd9);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2575fc, #58ecd9);
+}
+
+.alert {
+    color: red;
+    display: none;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.radio-group input {
+    margin-left: 0.5em;
+    margin-right: 0.2em;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.social-logo:hover {
+    opacity: 0.8;
+}
